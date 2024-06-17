@@ -151,7 +151,6 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -159,24 +158,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/23f3597bca.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <nav class="navbar">
         <div class="logo">
             <a href="#">Reusedecor</a>
         </div>
-            <ul class="nav-itens">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-       
-        <div class="icones">
-            <a href="#">
-            <i class="fas fa-shopping-bag"></i>
-        </a>
-        <button>Login</button>
+        <ul class="nav-itens">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <div class="icones menu-openner">
+            <i class="fas fa-shopping-bag" id="cart-icon"></i>
+            <span id="cart-count">0</span>
+            <button>Login</button>
         </div>
     </nav>
 
@@ -224,92 +220,15 @@
                     <div class="offer__discount">
                         <a href="#">PIX ou <i class='bx bx-barcode'></i> R$ 107,10<br>com 10% de desconto</a>
                     </div>
-                    <a href="#" class="btn">adicionar ao carrinho</a>
+                    <a href="#" class="btn add-to-cart">adicionar ao carrinho</a>
                 </div>
-    
-                <div class="offer__item swiper-slide">
-                    <div class="offer__img">
-                        <img src="./produto2.png" alt="">
-                    </div>
-                    <div class="offer__desc">
-                        <p>Cadeira The Bamboo</p>
-                    </div>
-                    <div class="offer__price">
-                        <span>R$ 399,00</span>
-                    </div>
-                    <div class="offer__discount">
-                        <a href="#">PIX ou <i class='bx bx-barcode'></i> R$ 359,10<br>com 10% de desconto</a>
-                    </div>
-                    <a href="#" class="btn">adicionar ao carrinho</a>
-                </div>
-                <div class="offer__item swiper-slide">
-                    <div class="offer__img">
-                        <img src="./produto2.png" alt="">
-                    </div>
-                    <div class="offer__desc">
-                        <p>Banqueta</p>
-                    </div>
-                    <div class="offer__price">
-                        <span>R$ 399,00</span>
-                    </div>
-                    <div class="offer__discount">
-                        <a href="#">PIX ou <i class='bx bx-barcode'></i> R$ 359,10<br>com 10% de desconto</a>
-                    </div>
-                    <a href="#" class="btn">adicionar ao carrinho</a>
-                </div>
-                <div class="offer__item swiper-slide">
-                    <div class="offer__img">
-                        <img src="./produto3.png" alt="">
-                    </div>
-                    <div class="offer__desc">
-                        <p>Luminária de Mesa com base de madeira</p>
-                    </div>
-                    <div class="offer__price">
-                        <span>R$ 189,00</span>
-                    </div>
-                    <div class="offer__discount">
-                        <a href="#">PIX ou <i class='bx bx-barcode'></i> R$ 117,10<br>com 10% de desconto</a>
-                    </div>
-                    <a href="#" class="btn">adicionar ao carrinho</a>
-                </div>
-    
-                <div class="offer__item swiper-slide">
-                    <div class="offer__img">
-                        <img src="./escrivaninha.jpg" alt="">
-                    </div>
-                    <div class="offer__desc">
-                        <p>Escrivaninha</p>
-                    </div>
-                    <div class="offer__price">
-                        <span>R$ 499,00</span>
-                    </div>
-                    <div class="offer__discount">
-                        <a href="#">PIX ou <i class='bx bx-barcode'></i> R$ 449,10<br>com 10% de desconto</a>
-                    </div>
-                    <a href="#" class="btn">adicionar ao carrinho</a>
-                </div>
-    
-                <div class="offer__item swiper-slide">
-                    <div class="offer__img">
-                        <img src="./banqueta.png" alt="">
-                    </div>
-                    <div class="offer__desc">
-                        <p>Banqueta Palha</p>
-                    </div>
-                    <div class="offer__price">
-                        <span>R$ 499,00</span>
-                    </div>
-                    <div class="offer__discount">
-                        <a href="#">PIX ou <i class='bx bx-barcode'></i> R$ 449,10<br>com 10% de desconto</a>
-                    </div>
-                    <a href="#" class="btn">adicionar ao carrinho</a>
-                </div>
+                <!-- Repita para outros produtos -->
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
     </section>
-    
+
     <section class="avaliacoes-clientes">
         <h2>Avaliações de clientes</h2>
         <div class="avaliacoes">
@@ -333,7 +252,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer class="footer">
         <div>
             <h2>Reusedecor</h2>
@@ -345,4 +264,18 @@
             <p>Nos sigam nas redes sociais</p>
             <p class="termos">
                 <a href="#">terms & services</a><br>
-                Reusedecor
+        </footer>
+    </footer>
+
+    <div class="cart-tab" id="cart-tab">
+        <h1>Carrinho de Compras</h1>
+        <div class="list-cart" id="list-cart"></div>
+        <div class="btn">
+            <button class="close" id="close-cart">Fechar</button>
+            <button class="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

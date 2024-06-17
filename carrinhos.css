@@ -1,0 +1,460 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f6f6f6;
+    font-family: 'Lato', 'sans-serif';
+}
+
+body > header{
+    background-color: #111;
+    color: white;
+    font-size: 24px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+body > main{
+    background: #fff;
+    padding: 0 30px 30px;
+}
+body > main .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;  
+}
+body > main .content section {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  
+  body > main .content aside {
+    min-width: 250px;
+  }
+
+button{
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+main .page-title {
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+main .content{
+    display: flex;
+}
+main .content section{
+    flex: 1;
+}
+
+main .content aside{
+    min-width: 250px;
+}
+
+table{
+    width: 100%;
+}
+thead  tr{
+    border-bottom: 3px solid #eee;
+}
+thead th{
+    text-align: left;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #666;
+}
+tbody tr{
+    border-bottom: 3px solid #000000;
+}
+tbody td{
+    padding: 30px 0;
+}
+img{
+    height: 100px;
+    border-radius:6px ;
+}
+.info {
+    margin-left: 20px;
+}
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.remove {
+    background: #eee;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 30px;
+}
+
+.remove:hover{
+    background: #ddd;
+}
+
+.qty{
+    background: #eee;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0;
+    justify-content:space-around;
+    min-width: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.qty button{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 0 10px;
+    font-size: 20px;
+    height: 100%;  
+}
+ button:hover{
+        background: #ddd;
+    }
+.qty span{
+    margin: 0 10px;
+}
+
+aside{
+    margin-left: 30px;
+}
+
+aside .box{
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     background: #ddd;
+}
+
+aside > header {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #b12e2e;
+}
+aside > div.info{
+    padding: 20px;
+    font-size: 16px;
+    
+}
+
+aside > div.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #333;
+}
+ footer{
+    padding: 15px 20px;
+    background: #ccc;
+    font-size: 18px;
+}
+aside > button{
+    border: 0;
+    padding:15px 0;
+    color: white;
+    background: green;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+table thead tr {
+    border-bottom: 3px solid #eee;
+  }
+  
+  table thead tr th {
+    text-align: left;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #666;
+  }
+  
+  table tbody tr {
+    border-bottom: 3px solid #eee;
+  }
+  
+  table tbody tr:last-child {
+    border: 0;
+  }
+  
+  table tbody tr td {
+    padding: 30px 0;
+  }
+  
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .product img {
+    border-radius: 6px;
+  }
+  
+  .product .info {
+    margin-left: 20px;
+  }
+  
+  .product .info .name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product .info .category {
+    color: #666;
+  }
+  
+  .qty {
+    background: #eee;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+  }
+  
+  .qty span {
+    margin: 0 10px;
+  }
+  
+  .qty button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: transparent;
+    border: 0;
+    padding: 0 10px;
+    font-size: 20px;
+    height: 100%;
+  }
+  
+  .qty button:hover {
+    background: #ddd;
+  }
+  
+  .remove {
+    background: #eee;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 20px;
+  }
+  
+  .remove:hover {
+    background: #ddd;
+  }
+  
+  aside {
+    margin-left: 30px;
+  }
+  
+  aside .box {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: #eee;
+    color: #222;
+  }
+  
+  aside .box header {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  aside .box .info {
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  aside .box .info > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  aside .box .info > div:last-child {
+    margin: 0;
+  }
+  
+  aside .box .info button {
+    color: #28a745;
+    background: transparent;
+    border: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 16px;
+  }
+  
+  aside .box footer {
+    padding: 15px 20px;
+    background: #ddd;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  aside > button {
+    border: 0;
+    padding: 15px 0;
+    color: white;
+    background: #28a745;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  
+  aside > button:hover {
+    background: #3bc55b;
+  }
+
+  /* cart */
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #eee;
+}
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -145,11 +145,23 @@ ul {
     font-size: var(--normal-font-size);
 }
 
-.icones {
+.icones.menu-openner {
     display: flex;
     align-items: center;
 }
-
+.icones span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 5%;
+    right: 100px; 
+}
 .icones a {
     color: var(--white-color);
     font-size: var(--h2-font-size);
@@ -368,4 +380,52 @@ ul {
 
 .endereco p {
     font-size: var(--normal-font-size);
+}
+
+/* Carrinho */
+.cart-tab {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.cart-tab.open {
+    display: block;
+}
+
+.cart-tab .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-tab .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.cart-tab .item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart-tab .item .quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-tab .item .quantity span {
+    margin: 0 5px;
+    cursor: pointer;
 }
