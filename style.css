@@ -1,16 +1,25 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300;400;500;600;700;800&family=Satisfy&display=swap");
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+
 :root {
     --header-height: 8rem;
 
     /*--------------------COLORS-----------------------------*/
-    --primary-color: #3d572f;
-    --primary-color-alt: #96d674;
-    --secondary-color: #eeeeee;
+    --primary-color: #5A6334;
+    --primary-color-alt: #d2d8af;
+    --secondary-color: #D8D9CE;
     --secondary-color-alt: #dcdcdc;
     --black-color: #0f0f0f;
-    --white-color: #ffffff;
+    --white-color:#ffffff;
 
     /*---------------FONT  AND TYPOGRAPHY-------------------*/
     --font-body: "Raleway", sans-serif;
@@ -57,7 +66,7 @@ html {
 }
 
 body {
-    background-color: var(--white-color);
+    background-color: var(--primary-color-alt);
     font-family: var(--font-body);
     font-size: var(--normal-font-size);
     overflow-x: hidden;
@@ -85,6 +94,7 @@ ul {
     text-align: center;
     font-weight: var(--font-medium);
     text-transform: uppercase;
+    font-family: "Lora", serif;
 }
 
 /* BUTTON */
@@ -123,12 +133,14 @@ ul {
     padding: 1rem 2rem;
     background-color: var(--primary-color);
     color: var(--white-color);
+    font-family: "Lora", serif;
 }
 
 .logo a {
     font-family: var(--font-title);
     font-size: var(--h1-font-size);
     color: var(--white-color);
+    font-family: "Lora", serif;
 }
 
 .nav-itens {
@@ -196,7 +208,7 @@ i.fas.fa-shopping-bag {
 
 /* SECTION - pq-escolher */
 .pq-escolher {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color-alt);
     padding: 3rem 1rem;
     text-align: center;
 }
@@ -204,6 +216,7 @@ i.fas.fa-shopping-bag {
 .pq-escolher h2 {
     font-size: var(--h1-font-size);
     margin-bottom: 2rem;
+    font-family: "Lora", serif;
 }
 
 .mvvs {
@@ -236,15 +249,15 @@ i.fas.fa-shopping-bag {
 
 /* SECTION - offer */
 .offer {
-    background-color: var(--white-color);
+    background-color: var(--primary-color-alt);
     padding: 3rem 1rem;
 }
 
 .offer__content {
+    background-color: var(--primary-color-alt);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Distribui o espaço entre os itens */
-    gap: 20px; /* Espaçamento entre os itens */
 }
 
 .offer__item {
@@ -305,6 +318,7 @@ i.fas.fa-shopping-bag {
 .avaliacoes-clientes h2 {
     font-size: var(--h1-font-size);
     margin-bottom: 2rem;
+    font-family: "Lora", serif;
 }
 
 .avaliacoes {
@@ -349,6 +363,7 @@ i.fas.fa-shopping-bag {
 .footer h2 {
     font-size: var(--h1-font-size);
     margin-bottom: 1rem;
+    font-family: "Lora", serif;
 }
 
 .redes-sociais a {
