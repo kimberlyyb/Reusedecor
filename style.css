@@ -162,7 +162,7 @@ ul {
     top: 5%;
     right: 100px; 
 }
-.icones a {
+i.fas.fa-shopping-bag {
     color: var(--white-color);
     font-size: var(--h2-font-size);
     margin-right: 1rem;
