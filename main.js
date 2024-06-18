@@ -4,11 +4,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartTab = document.getElementById('cart-tab');
     const closeCartButton = document.getElementById('close-cart');
     const listCart = document.getElementById('list-cart');
+    const cartSubtotal = document.getElementById('cart-subtotal');
+    const cartTotal = document.getElementById('cart-total');
 
     let cart = [];
 
     function updateCartCount() {
         cartCount.textContent = cart.length;
+    }
+
+    function calculateSubtotal() {
+        return cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    }
+
+    function calculateTotal() {
+        const subtotal = calculateSubtotal();
+        const total = subtotal; // Adicione outras taxas, descontos, etc. se necessário
+        return total;
     }
 
     function renderCart() {
@@ -48,6 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateCart();
             });
         });
+
+        const subtotal = calculateSubtotal().toFixed(2);
+        const total = calculateTotal().toFixed(2);
+        cartSubtotal.textContent = subtotal;
+        cartTotal.textContent = total;
     }
 
     function updateCart() {
