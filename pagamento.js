@@ -1,25 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const payWithCardButton = document.getElementById('pay-with-card');
-    const payWithPixButton = document.getElementById('pay-with-pix');
-    const payWithBoletoButton = document.getElementById('pay-with-boleto');
+   let payWithCardButton = document.getElementById('pay-with-card');
+   let payWithPixButton = document.getElementById('pay-with-pix');
+   let payWithBoletoButton = document.getElementById('pay-with-boleto');
 
-    const cardPaymentForm = document.getElementById('card-payment-form');
-    const pixPaymentForm = document.getElementById('pix-payment-form');
-    const boletoPaymentForm = document.getElementById('boleto-payment-form');
+   let cardPaymentForm = document.getElementById('card-payment-form');
+   let pixPaymentForm = document.getElementById('pix-payment-form');
+   let boletoPaymentForm = document.getElementById('boleto-payment-form');
 
-    const cardNumberInput = document.getElementById('card-number-input');
-    const cardNameInput = document.getElementById('card-name-input');
-    const cardExpiryInput = document.getElementById('card-expiry-input');
-    const cardCvcInput = document.getElementById('card-cvc-input');
+   let cardNumberInput = document.getElementById('card-number-input');
+   let cardNameInput = document.getElementById('card-name-input');
+   let cardExpiryInput = document.getElementById('card-expiry-input');
+   let cardCvcInput = document.getElementById('card-cvc-input');
 
-    const cardNumber = document.querySelector('.card-number');
-    const cardName = document.querySelector('.card-name');
-    const cardExpiry = document.querySelector('.card-expiry');
-    const cardCvc = document.querySelector('.card-cvc');
+   let cardNumber = document.querySelector('.card-number');
+   let cardName = document.querySelector('.card-name');
+   let cardExpiry = document.querySelector('.card-expiry');
+   let cardCvc = document.querySelector('.card-cvc');
 
-    const cardPreview = document.querySelector('.card-preview');
-    const cardFront = document.querySelector('.card-front');
-    const cardBack = document.querySelector('.card-back');
+   let cardPreview = document.querySelector('.card-preview');
+   let cardFront = document.querySelector('.card-front');
+   let cardBack = document.querySelector('.card-back');
 
     payWithCardButton.addEventListener('click', () => {
         cardPaymentForm.classList.add('active');
