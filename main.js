@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const listCart = document.getElementById('list-cart');
     const cartSubtotal = document.getElementById('cart-subtotal');
     const cartTotal = document.getElementById('cart-total');
-
+    const checkoutButton = document.getElementById('checkout');
+    
     let cart = [];
 
     function updateCartCount() {
@@ -96,5 +97,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     closeCartButton.addEventListener('click', () => {
         cartTab.classList.remove('open');
+    });
+
+    checkoutButton.addEventListener('click', () => {
+        if (cart.length === 0) {
+            alert('O carrinho está vazio. Por favor, adicione algum produto.');
+        } else {
+            window.location.href = 'pagamento.html';
+        }
     });
 });
