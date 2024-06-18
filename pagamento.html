@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento</title>
+    <link rel="stylesheet" href="pagamento.css">
 </head>
 <body>
-    <h1>oi</h1>
+    <div class="payment-container">
+        <h1>Escolha a forma de pagamento</h1>
+        <div class="payment-options">
+            <button id="pay-with-card" class="payment-button">Pagar com Cartão</button>
+            <button id="pay-with-pix" class="payment-button">Pagar com PIX</button>
+            <button id="pay-with-boleto" class="payment-button">Pagar com Boleto Bancário</button>
+        </div>
+
+        <div id="card-payment-form" class="payment-form">
+            <h2>Pagamento com Cartão</h2>
+            <div class="card-preview">
+                <div class="card-front">
+                    <div class="card-number">0000 0000 0000 0000</div>
+                    <div class="card-name">NOME NO CARTÃO</div>
+                    <div class="card-expiry">00/00</div>
+                </div>
+                <div class="card-back">
+                    <div class="card-cvc">CVC</div>
+                </div>
+            </div>
+            <form id="card-form">
+                <div class="form-group">
+                    <label for="card-number-input">Número do Cartão</label>
+                    <input type="text" id="card-number-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-name-input">Nome no Cartão</label>
+                    <input type="text" id="card-name-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-expiry-input">Data de Validade</label>
+                    <input type="text" id="card-expiry-input" placeholder="MM/AA" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-cvc-input">CVC</label>
+                    <input type="text" id="card-cvc-input" required>
+                </div>
+                <button type="submit" class="submit-button">Pagar</button>
+            </form>
+        </div>
+
+        <div id="pix-payment-form" class="payment-form">
+            <h2>Pagamento com PIX</h2>
+            <form id="pix-form">
+                <div class="form-group">
+                    <label for="pix-key-input">Chave PIX</label>
+                    <input type="text" id="pix-key-input" required>
+                </div>
+                <button type="submit" class="submit-button">Gerar QR Code</button>
+            </form>
+            <div id="pix-qrcode"></div>
+        </div>
+
+        <div id="boleto-payment-form" class="payment-form">
+            <h2>Pagamento com Boleto Bancário</h2>
+            <form id="boleto-form">
+                <div class="form-group">
+                    <label for="nome-input">Nome Completo</label>
+                    <input type="text" id="nome-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="cpf-input">CPF</label>
+                    <input type="text" id="cpf-input" required>
+                </div>
+                <button type="submit" class="submit-button">Gerar Boleto</button>
+            </form>
+            <div id="boleto"></div>
+        </div>
+    </div>
+    <script src="pagamento.js"></script>
 </body>
 </html>
